@@ -10,7 +10,8 @@ export function AudioVisualizerWrapper() {
     const fetchAudioAsBuffer = async () => {
       try {
         // https://20essentials.github.io/axol-soundtrack/songs/n1.mp3
-        const response = await fetch('/assets/axol-get-up-again.mp3');
+        // const response = await fetch('/assets/axol-get-up-again.mp3');
+        const response = await fetch('https://20essentials.github.io/axol-soundtrack/songs/n1.mp3');
         const arrayBuffer = await response.arrayBuffer();
         setAudioBuffer(arrayBuffer);
       } catch (error) {
